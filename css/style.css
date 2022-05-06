@@ -22,8 +22,9 @@ html {
   font-size: 35px;
   color: white;
   text-decoration: none;
+  transition: 1s;
 }
 .nav-link:hover{
-  background-color: rgb(53, 25, 57);
-  color: rgba(226, 229, 226, 0.652);
+  color: rgb(255, 238, 0);
+  transition: 1s;
 }
