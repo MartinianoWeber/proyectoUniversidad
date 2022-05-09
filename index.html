@@ -1,38 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;700;800&display=swap"
+        rel="stylesheet">
     <title>W.L Bike's</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 
-    <header>
-        <nav class="nav-bar">
-            <a class="nav-link" href="">Bicicletas</a>
-            <a class="nav-link" href="">Componentes</a>
-            <a class="nav-link" href="">Indumentaria</a>
-            <a class="nav-link" href="">Accesorios</a>
-            <a class="nav-link" href="">Bmx</a>
-            <a class="nav-link" href="">Usado</a>
-            <a class="nav-link" href="">Team W.L</a>
+    <header class="header d-flex">
+        <div class="header__content d-flex">
+
+            <div class="content__1">
+                <a href=""><img src="./img/LogoBlanco.png" alt=""></a>
+            </div>
+
+            <div class="content__2 d-flex">
+                <div>
+                    <div class="group">
+                        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+                        <input placeholder="Busca tu producto ideal" type="search" class="input">
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex content__3">
+                <button>Inicio de sesión</button>
+                <p>|</p>
+                <button>Registrarme</button>
+            </div>
+        </div>
+        <nav class="navbar">
+            <a class="navbar__link" href="">Productos</a>
+            <a class="navbar__link" href="">Quiero personalizar mi bicicleta</a>
+            <a class="navbar__link" href="">Team W.L</a>
+            <a class="navbar__link" href="">Contacto</a>
         </nav>
-    
+
     </header>
     <main>
-        <section>
-
+        <!-- SECCION 1 -->
+        <section class="section1">
+            <div class="section1__slide1">
+                <img src="/img/Slide1.jpg" alt="">
+            </div>
+            <div class="section1__contenedor">
+                <div class="section1__direcciones d-flex">
+                    <button>&lt</button>
+                    <button>&gt</button>
+                </div>
+            </div>
         </section>
-        <section>
-
+        <!-- SECCION 2 -->
+        <section class="general">
+            <div class="general__seccion">
+                <div class="general__categoria">
+                    <h2>En base a tu historial reciente</h2>
+                </div>
+                <div class="general__contenedor">
+                    <div class="card d-flex">
+                        <div class="card__img d-flex">
+                            <div class="card__price">
+                                <p>$7,000</p>
+                            </div>
+                        </div>
+                        <div class="card__textos d-flex">
+                            <div>
+                                <p>Bicicleta Scott XR4</p>
+                                <p class="card__envioGratis">Envio Gratis</p>
+                            </div>
+                            <button class="card__btn d-flex">
+                                <img class="btn__flecha" src="/img/flechaShop.png" alt="">
+                                <p>Ver mas</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card d-flex">
+                        <div class="card__img d-flex">
+                            <div class="card__price">
+                                <p>$7,000</p>
+                            </div>
+                        </div>
+                        <div class="card__textos d-flex">
+                            <div>
+                                <p>Bicicleta Scott XR4</p>
+                                <p class="card__envioGratis">Envio Gratis</p>
+                            </div>
+                            <button class="card__btn d-flex">
+                                <img class="btn__flecha" src="/img/flechaShop.png" alt="">
+                                <p>Ver mas</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card d-flex">
+                        <div class="card__img d-flex">
+                            <div class="card__price">
+                                <p>$7,000</p>
+                            </div>
+                        </div>
+                        <div class="card__textos d-flex">
+                            <div>
+                                <p>Bicicleta Scott XR4</p>
+                                <p class="card__envioGratis">Envio Gratis</p>
+                            </div>
+                            <button class="card__btn d-flex">
+                                <img class="btn__flecha" src="/img/flechaShop.png" alt="">
+                                <p>Ver mas</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card d-flex">
+                        <div class="card__img d-flex">
+                            <div class="card__price">
+                                <p>$7,000</p>
+                            </div>
+                        </div>
+                        <div class="card__textos d-flex">
+                            <div>
+                                <p>Bicicleta Scott XR4</p>
+                                <p class="card__envioGratis">Envio Gratis</p>
+                            </div>
+                            <button class="card__btn d-flex">
+                                <img class="btn__flecha" src="/img/flechaShop.png" alt="">
+                                <p>Ver mas</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card d-flex">
+                        <div class="card__img d-flex">
+                            <div class="card__price">
+                                <p>$7,000</p>
+                            </div>
+                        </div>
+                        <div class="card__textos d-flex">
+                            <div>
+                                <p>Bicicleta Scott XR4</p>
+                                <p class="card__envioGratis">Envio Gratis</p>
+                            </div>
+                            <button class="card__btn d-flex">
+                                <img class="btn__flecha" src="/img/flechaShop.png" alt="">
+                                <p>Ver mas</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECCION 3 -->
+        <section class="general">
+            <div class="general__seccion">
+                <div class="general__categoria">
+                    <h2>Productos destacados</h2>
+                    <a href="#">Ver todos</a>
+                </div>
+                <div class="general__contenedor">
+                    <div class="card d-flex">
+                        <div class="card__img d-flex">
+                            <div class="card__price">
+                                <p>$7,000</p>
+                            </div>
+                        </div>
+                        <div class="card__textos d-flex">
+                            <div>
+                                <p>Bicicleta Scott XR4</p>
+                                <p class="card__envioGratis">Envio Gratis</p>
+                            </div>
+                            <button class="card__btn d-flex">
+                                <img class="btn__flecha" src="/img/flechaShop.png" alt="">
+                                <p>Ver mas</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card d-flex">
+                        <div class="card__img d-flex">
+                            <div class="card__price">
+                                <p>$7,000</p>
+                            </div>
+                        </div>
+                        <div class="card__textos d-flex">
+                            <div>
+                                <p>Bicicleta Scott XR4</p>
+                                <p class="card__envioGratis">Envio Gratis</p>
+                            </div>
+                            <button class="card__btn d-flex">
+                                <img class="btn__flecha" src="/img/flechaShop.png" alt="">
+                                <p>Ver mas</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card d-flex">
+                        <div class="card__img d-flex">
+                            <div class="card__price">
+                                <p>$7,000</p>
+                            </div>
+                        </div>
+                        <div class="card__textos d-flex">
+                            <div>
+                                <p>Bicicleta Scott XR4</p>
+                                <p class="card__envioGratis">Envio Gratis</p>
+                            </div>
+                            <button class="card__btn d-flex">
+                                <img class="btn__flecha" src="/img/flechaShop.png" alt="">
+                                <p>Ver mas</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card d-flex">
+                        <div class="card__img d-flex">
+                            <div class="card__price">
+                                <p>$7,000</p>
+                            </div>
+                        </div>
+                        <div class="card__textos d-flex">
+                            <div>
+                                <p>Bicicleta Scott XR4</p>
+                                <p class="card__envioGratis">Envio Gratis</p>
+                            </div>
+                            <button class="card__btn d-flex">
+                                <img class="btn__flecha" src="/img/flechaShop.png" alt="">
+                                <p>Ver mas</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card d-flex">
+                        <div class="card__img d-flex">
+                            <div class="card__price">
+                                <p>$7,000</p>
+                            </div>
+                        </div>
+                        <div class="card__textos d-flex">
+                            <div>
+                                <p>Bicicleta Scott XR4</p>
+                                <p class="card__envioGratis">Envio Gratis</p>
+                            </div>
+                            <button class="card__btn d-flex">
+                                <img class="btn__flecha" src="/img/flechaShop.png" alt="">
+                                <p>Ver mas</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+          <!-- SECCION 4 -->
+          <section class="general">
+            <div class="general__seccion">
+                <div class="general__categoria">
+                    <h2>Nuestros sponsors</h2>
+                    <a href="#">Ver todos</a>
+                </div>
+                <div class="general__contenedor">
+                    <div class="cardSponsor">
+                        <div class="cardSponsor__info d-flex">
+                            <img src="/img/scott.jpg" alt="">
+                            <h3>Scott</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus distinctio eligendi molestiae quidem aut veritatis quas, saepe</p>
+                        </div>
+                        <div class="cardSponsor__btn">
+                            <button>Ver productos</button>
+                        </div>
+                    </div>
+                    <div class="cardSponsor">
+                        <div class="cardSponsor__info d-flex">
+                            <img src="/img/scott.jpg" alt="">
+                            <h3>Scott</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus distinctio eligendi molestiae quidem aut veritatis quas, saepe</p>
+                        </div>
+                        <div class="cardSponsor__btn">
+                            <button>Ver productos</button>
+                        </div>
+                    </div>
+                    <div class="cardSponsor">
+                        <div class="cardSponsor__info d-flex">
+                            <img src="/img/scott.jpg" alt="">
+                            <h3>Scott</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus distinctio eligendi molestiae quidem aut veritatis quas, saepe</p>
+                        </div>
+                        <div class="cardSponsor__btn">
+                            <button>Ver productos</button>
+                        </div>
+                    </div>
+                    <div class="cardSponsor">
+                        <div class="cardSponsor__info d-flex">
+                            <img src="/img/scott.jpg" alt="">
+                            <h3>Scott</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus distinctio eligendi molestiae quidem aut veritatis quas, saepe</p>
+                        </div>
+                        <div class="cardSponsor__btn">
+                            <button>Ver productos</button>
+                        </div>
+                    </div>
+                    <div class="cardSponsor">
+                        <div class="cardSponsor__info d-flex">
+                            <img src="/img/scott.jpg" alt="">
+                            <h3>Scott</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus distinctio eligendi molestiae quidem aut veritatis quas, saepe</p>
+                        </div>
+                        <div class="cardSponsor__btn">
+                            <button>Ver productos</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <p></p>
-        <p>las letras negritas del final</p>
     </footer>
     <script src="./js/main.js"></script>
 </body>
+
 </html>
