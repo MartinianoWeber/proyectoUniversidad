@@ -113,7 +113,7 @@
   color: var(--grisClaro);
  }
  
- .input:focus, input:hover {
+ .input:focus, .input:hover {
   outline: none;
   border-color: var(--HoverInput) ;
   background-color: var(--blanco);
@@ -554,4 +554,40 @@
   font-size:1.8rem;
   border-radius:2rem;
 
+}
+
+
+/* Html de contacto */
+.sectionContacto__formulario{
+  flex-direction: column;
+  gap: 1rem;
+  width: 60rem;
+  margin: auto;
+  background-color: #67b26f58;
+
+
+}
+.sectionContacto{
+  background-image: url(/img/Mtb-bosque.jpg);
+  background-repeat: no-repeat;
+  width: auto;
+  background-size: cover;
+  height: 65rem;
+
+}
+
+.sectionContacto__formulario input{
+  font-size: 1.5rem;
+  padding: 1rem;
+
+}
+.sectionContacto__formulario textarea{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  height: 20rem;
+}
+.sectionContacto__formulario button{
+  font-size: 2rem;
+  background-color: var(--violataBtn);
+  color: var(--blanco);
 }
