@@ -3,7 +3,8 @@ const generador = document.querySelector('#generador')
 const btnVerificado = document.querySelector('#btnVerificado')
 const btnSubmit = document.querySelector('#btnSubmit')
 const ok = document.querySelector('#ok')
-let prueba = {
+const error = document.querySelector('#error')
+let validador = {
     clave: "",
     claveEnviadaUser: "",
     claveOk:""
@@ -17,46 +18,60 @@ const  randomKey = (num) => {
         result1 += caracteres.charAt(Math.floor(Math.random() * caracteresLength));
     }
 
-    prueba.clave = result1
-    
-    console.log(result1) 
+    validador.clave = result1
 }
 
 btnVerificado.addEventListener('click', (e) =>{
-    console.log(prueba.clave)
+    e.preventDefault()
     randomKey(5)
     generador.innerHTML = `
-    <p>${prueba.clave}</p>
-    <input id="campoClave" type="text" name="" id="">
-    <button id="btnVerificar">Verificar</button>
+    <div class="d-flex sectionContacto__validacion">
+        <p class="sectionContacto__texto">${validador.clave}</p>
+        <input id="campoClave" type="text" name="" id="">
+        <button id="btnValidar">Verificar</button>
+    </div>
+    
     ` 
     campoClave.addEventListener('change', (e) =>{
-        prueba.claveEnviadaUser = e.target.value
-        
+        validador.claveEnviadaUser = e.target.value
     })
-    btnVerificar.addEventListener('click', (e) =>{
-        if(prueba.claveEnviadaUser != ""){
-            if(prueba.clave === prueba.claveEnviadaUser){
+    btnValidar.addEventListener('click', (e) =>{
+        e.preventDefault()
+        if(validador.claveEnviadaUser != ""){
+            if(validador.clave === validador.claveEnviadaUser){
                 generador.innerHTML = `
-                <p>Verificado Correctamente </p>
+                <p class="verificacionOk">Verificado Correctamente </p>
                 `
-                prueba.claveOk = "ok"
+                btnVerificado.remove()
+                validador.claveOk = "ok"
+
             }else{
-                alert("El campo no se verifico")
+                error.innerHTML=`<p class="error">El campo no se verifico</p>`      
+                setTimeout(() =>{
+                    error.innerHTML=""
+                },3000)  
             }
         }else{
-            alert("error campo vacio")
+            error.innerHTML=`<p class="error">Error campo vacio</p>`      
+            setTimeout(() =>{
+                error.innerHTML=""
+            },3000)  
         }
     })
 
 })
 
+
+
 btnSubmit.addEventListener('click', (e) =>{
-    if(prueba.claveOk != ""){
+    e.preventDefault()
+    if(validador.claveOk != ""){
         ok.innerHTML= `
         <p>Email enviado<p>
         `
     }else{
         alert("CAMPO DE VERIFICACION ERRONEO")
+        
     }
 })
+
