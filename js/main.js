@@ -67,11 +67,15 @@ btnSubmit.addEventListener('click', (e) =>{
     e.preventDefault()
     if(validador.claveOk != ""){
         ok.innerHTML= `
-        <p>Email enviado<p>
+        <div class="grantedMail">
+            <p>Email enviado con exito<p>
+        </div>
         `
     }else{
-        alert("CAMPO DE VERIFICACION ERRONEO")
-        
+        error.innerHTML=`<p class="error">Campo de verificacion vacio</p>`      
+        setTimeout(() =>{
+            error.innerHTML=""
+        },3000)
     }
 })
 

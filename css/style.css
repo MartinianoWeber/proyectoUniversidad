@@ -37,13 +37,15 @@
   
 
   button{
-    border: none;
-    outline: none;
     cursor: pointer;
   }
 
   textarea {
     resize: none;
+  }
+  input, textarea, button {
+    outline: none;
+    border: none;
   }
 
   /** Utilidades **/
@@ -558,13 +560,17 @@
 
 
 /* Html de contacto */
+.sectionContacto{
+  flex-direction: column;
+  
+}
 .sectionContacto__formulario{
   flex-direction: column;
   gap: 1rem;
-  width: 60rem;
-  margin: auto;
+  width: 60rem; 
   background-color: #67b26f58;
-
+  margin: 0 auto;
+  margin-top: 6%;
 
 }
 .sectionContacto{
@@ -620,4 +626,145 @@
   margin: auto;
   width: 600px;
   text-align: center;
+}
+
+.grantedMail{
+  background-color: #00000070;
+  width: 600px;
+  margin: auto;
+}
+
+.grantedMail p{
+  color: var(--blanco);
+  text-align: center;
+  font-size: 3rem;
+}
+
+.footer--modified{
+  margin-top: 0;
+}
+
+
+/* PRODUCTOLAYOUT HTML */
+
+.producto__slideImg{
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.slideImg__imgs img{
+  width: 131.2px
+}
+.slideImg__img img{
+  width: 800px
+}
+
+
+.producto__titulo{
+  font-size:2rem;
+
+}
+
+.producto__titulo h1{
+  margin-bottom: 0rem;
+
+}
+
+.producto__precio p{
+  font-size: 1.8rem;
+  background-color: var(--verdeGratis);
+  width: 80px;
+  text-align: center;
+  margin-top: 0.5rem;
+  border-radius: 4rem;
+}
+
+.producto__btns{
+  align-items: center;
+  gap: 1rem;
+}
+
+.producto__btnSumar{
+  align-items: center;
+}
+
+.btnSumar__btns button{
+  background-color: var(--negro);
+  color: var(--blanco);
+  font-size: 1.8rem;
+  height:4rem;
+}
+
+.btnSumar__mas button{
+  border-bottom-right-radius:2rem ;
+  border-top-right-radius:2rem ;
+}
+
+.btnSumar__menos button{
+  border-bottom-left-radius:2rem ;
+  border-top-left-radius:2rem ;
+}
+
+.btnSumar__text{
+  background-color: var(--negro);
+  color: var(--blanco);
+  font-size: 1.8rem;
+  height:4rem;
+  width: 60px;
+  
+}
+.btnSumar__text p{
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.producto__btnAnadir button{
+  background-color: var(--violataBtn);
+  color: var(--blanco);
+  padding: .7rem;
+  border-radius: .5rem;
+  font-size: 1.8rem;
+}
+
+.producto__descripcion{
+  font-size: 1.8rem;
+  text-align: center;
+}
+.producto__descripcion h2{
+  margin-bottom: 0;
+}
+.producto__descripcion p{
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+/* METODOS DE PAGO */
+
+.metodosPago{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.metodosPago__img {
+  justify-content:center;
+  align-items: center;
+  gap:2rem;
+}
+
+.metodosPago__img div img{
+
+  width: 100px;
+}
+
+/* TABLA DE TALLES */
+
+.tablaTalles{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.tablaTalles__tabla{
+  width: 800px;
+  margin: auto;
 }

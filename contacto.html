@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header class="header d-flex">
         <div class="header__content d-flex">
 
@@ -31,32 +32,48 @@
             </div>
         </div>
         <nav class="navbar">
-            <a class="navbar__link" href="">Productos</a>
+            <a class="navbar__link" href="productoLayout.html">Productos</a>
             <a class="navbar__link" href="">Quiero personalizar mi bicicleta</a>
             <a class="navbar__link" href="">Team W.L</a>
             <a class="navbar__link" href="contacto.html">Contacto</a>
         </nav>
 
     </header>
-
+    <!-- MAIN -->
     <main>
-       <section class="sectionContacto" id="ok">
-             <form class="sectionContacto__formulario d-flex" action="">
+        <section class="sectionContacto d-flex" id="ok">
+            <form class="sectionContacto__formulario d-flex" action="">
                 <input type="email" name="" placeholder="Correo electronico" id="">
-                <input type="text" placeholder="Asunto" >
-                <textarea name="" id="" placeholder="Comentario" ></textarea>
+                <input type="text" placeholder="Asunto">
+                <textarea name="" id="" placeholder="Comentario"></textarea>
                 <button id="btnVerificado">Verifica que sos humano</button>
                 <div id="generador"></div>
-                <button id="btnSubmit" >Enviar email</button>
-             </form>
+                <button id="btnSubmit">Enviar email</button>
+            </form>
 
-             <div class="error" id="error" >
-         
+            <div class="error" id="error">
+
             </div>
-            
-       </section> 
 
+        </section>
     </main>
+    <!-- FOOTER -->
+    <footer class="footer footer--modified d-flex">
+        <div class="footer__textos">
+            <h6>Creado por:</h6>
+            <ul>
+                <li><a href="#">Martiniano Weber</a></li>
+                <li><a href="#">Santiago Larraburu</a></li>
+            </ul>
+        </div>
+        <div class="footer__img">
+            <img src="/img/Flecha.png" alt="">
+        </div>
+        <div class="footer__btn d-flex">
+            <h4>¿Te arrepentiste de alguna compra?</h4>
+            <button>Me arrepenti</button>
+        </div>
+    </footer>
     <script src="./js/main.js"></script>
 </body>
 
